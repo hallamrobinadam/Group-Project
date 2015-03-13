@@ -46,3 +46,14 @@
   margin-top: -20px;
     
 }
+
+
+.jumbotron {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 10px;
+  color: inherit;
+  background-color: #e250ba;
+  text-align: center;
+}
