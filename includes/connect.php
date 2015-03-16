@@ -1,8 +1,8 @@
 <?php
     define("DB_SERVER", "localhost");
-    define("DB_USER", "username"); //username
-    define("DB_PASS", "password=");//password
-    define("DB_NAME", "datebasename"); // database name (same as username for dakar)
+    define("DB_USER", "hager");
+    define("DB_PASS", "ApJp4PGE4zc=");
+    define("DB_NAME", "hager");
 
     $connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
 

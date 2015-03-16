@@ -1,1 +1,9 @@
-<?php $brand = "Lunacy"; ?>
+<?php 
+    
+    function redirectTo($toPage) {
+        header("Location: " . $toPage);
+        exit; 
+    }
+
+
+?>

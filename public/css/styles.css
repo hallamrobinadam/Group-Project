@@ -1,0 +1,83 @@
+.login-box {
+    width: 300px;
+    margin:20px auto;
+    text-align: center;
+    background: #e5e5e5;
+    border: 2px solid grey;
+    padding: 20px;
+    z-index: 1000;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.register-box {
+    width: 300px;
+    margin:20px auto;
+    text-align: center;
+    background: #e5e5e5;
+    border: 2px solid grey;
+    padding: 20px;
+}
+
+.form-control{
+
+    margin-bottom: 10px;
+
+}
+
+
+.container1{
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-top: 50px;
+    padding-top: 1px;
+    text-align: center;
+    border: solid;
+    background-color: #ebebeb;
+    border-color: #b2b2b2;
+}
+
+.form-control1 {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 1px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  text-align: center;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+
+.page-header1 {
+  padding-top: 35px;
+  margin: 0px 0 15px;
+  border-bottom: 1px solid #eee;
+  background-color: #e250ba;
+  height: 150px;
+  margin-top: -20px;
+
+}
+
+
+.jumbotron {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 10px;
+  color: inherit;
+  background-color: #e250ba;
+  text-align: center;
+}
