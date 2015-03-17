@@ -8,33 +8,36 @@
 
 <?php include("../includes/templates/banner.php"); ?>
 
+<?php
+    if(isset($_SESSION["username"])) {
+        include("../includes/templates/post.php");
+    }
+?>
 
 <div class="container">
     <div class="row">
         <div class="col-md-10">
-            <div class="list-group">
-                <a href="#" class="list-group-item active">
-                    Item
-                </a>
-                <a href="#" class="list-group-item">Category</a>
-                <a href="#" class="list-group-item">Description</a>
-            </div>
 
-            <div class="list-group">
-                <a href="#" class="list-group-item active">
-                    Item
-                </a>
-                <a href="#" class="list-group-item">Category</a>
-                <a href="#" class="list-group-item">Description</a>
-            </div>
+			<?php
+				$query = "SELECT * FROM sobu ORDER BY id DESC";
+			    $result = mysqli_query($connection, $query);
+			    if(!$result) {
+			        die("Query Error");
+			    }
+				while($row = mysqli_fetch_assoc($result)) {
+			?>
+				 <div class="list-group">
+	                <a href="#" class="list-group-item active">
+	                    <p><?php echo ucfirst($row["name_of_business"]); ?></p>
+	                </a>
+	                <div class="list-group-item"><p><?php echo ucfirst($row["category"]); ?></div>
+	                <a href="#" class="list-group-item"><p><?php echo ucfirst($row["postcode"]); ?></p></a>
+	                <a href="#" class="list-group-item"><p><?php echo ucfirst($row["rating"]); ?></p></a>
+	                <a href="#" class="list-group-item"><p><?php echo ucfirst($row["description"]); ?></p></a>
+	            </div>
 
-            <div class="list-group">
-                <a href="#" class="list-group-item active">
-                    Item
-                </a>
-                <a href="#" class="list-group-item">Category</a>
-                <a href="#" class="list-group-item">Description</a>
-            </div>
+			<?php } ?>
+
         </div>
 
         <div class="col-md-2">
@@ -60,6 +63,7 @@
 
     </div>
 </div>
+
 
 
 <?php include_once("../includes/templates/footer.php"); ?>

@@ -22,6 +22,6 @@
 
     }
 
-    redirectTo("home1.php");
+    redirectTo("home.php");
 
 ?>

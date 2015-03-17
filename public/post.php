@@ -5,33 +5,23 @@
 
     if(isset($_POST["post"])) {
         $name_of_business = $_POST["name_of_business"];
-        $rating = $_POST["rating"];
+        $postcode = $_POST["postcode"];
         $category = $_POST["category"];
+        $rating = $_POST["rating"];
         $description = $_POST["description"];
+        
+        $query = "SELECT * FROM `sobu` LIMIT 0, 30 ";
 
-        $query = "SELECT * FROM sobu WHERE username='{$username}' LIMIT 1";
-
-        $result = mysqli_query($connection, $query);
-
-        if($user = mysqli_fetch_assoc($result)) {
-            $_SESSION["message"] = "sorry username taken";
-        } else {
-            if(strcasecmp($password1, $password2) == 0) {
-	            $query = "INSERT INTO users (username, password) VALUES ('{$username}', '{$password1}')";
+	            $query = "INSERT INTO sobu (name_of_business, postcode, category, rating, description) VALUES ('{$name_of_business}', '{$postcode}', '{$category}', '{$rating}', '{$description}')";
                 $result = mysqli_query($connection, $query);
                 if($result) {
                    $_SESSION["message"] = "Success!";
                 } else {
                    $_SESSION["message"] = "Sorry something went wrong!";
                 }
-            } else {
-                $_SESSION["message"] = "Passwords dont match";
-            }
-
-        }
 
     }
 
-    redirectTo("home1.php");
+    redirectTo("home.php");
 
 ?>
