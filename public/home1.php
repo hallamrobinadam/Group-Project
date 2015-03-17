@@ -3,11 +3,32 @@
 <?php require_once("../includes/functions.php"); ?>
 <?php include_once("../includes/templates/header.php"); ?>
 
-
 <?php include("../includes/templates/nav.php"); ?>
-
 <?php include("../includes/templates/banner.php"); ?>
 
+<div class="container">
+    <h2>Post Your Item</h2>
+    <div class="row">
+        <form role="form">
+
+                <div class="col-md-4">
+                    <label for="email">Item Name:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Item Name">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="pwd">Category:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Category">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="pwd">Description:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Description">
+                </div>
+
+        </form>
+    </div>
+</div>
 
 <div class="container">
     <div class="row">
@@ -41,19 +62,19 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Categories</div>
                 <div class="list-group-item">
-                    <a href="food.html">Food</a>
+                    <a href="food1.html">Food</a>
                 </div>
                 <div class="list-group-item">
-                    <a href="nightclubs.html">Night Clubs</a>
+                    <a href="nightclubs1.html">Night Clubs</a>
                 </div>
                 <div class="list-group-item">
-                    <a href="clothes.html">Clothes</a>
+                    <a href="clothes1.html">Clothes</a>
                 </div>
                 <div class="list-group-item">
-                    <a href="gyms.html">Gyms</a>
+                    <a href="gyms1.html">Gyms</a>
                 </div>
                 <div class="list-group-item">
-                    <a href="electronics.html">Electronics</a>
+                    <a href="electronics1.html">Electronics</a>
                 </div>
             </div>
         </div>

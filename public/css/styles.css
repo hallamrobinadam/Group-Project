@@ -22,15 +22,6 @@ input {
     padding: 20px;
 }
 
-.post-box {
-    width: 800px;
-    margin:20px auto;
-    text-align: center;
-    background: #e5e5e5;
-    border: 2px solid grey;
-    padding: 20px;
-}
-
 .form-control{
 
     margin-bottom: 10px;
@@ -89,30 +80,4 @@ input {
   color: inherit;
   background-color: #e250ba;
   text-align: center;
-}
-
-.form-horizontal {
-  padding-bottom: 10px;
-}
-
-.input-xlarge{
-  border-radius: 10px;
-  margin-right: auto;
-  width: 300px;
-}
-
-.text-box{
-  border-radius: 10px;
-  width: 460px;
-  height: 120px;
-}
-
-.btn-primary{
-  background-color: #56a3e5;
-  border-color: #56a3e5;
-}
-
-.form-horizontal{
-    margin-left: auto;
-    margin-right: auto;
 }
