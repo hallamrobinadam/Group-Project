@@ -14,12 +14,14 @@
     }
 ?>
 
-            <div class="container">
+            
+        
+                        <div class="container">
                 <div class="row">
                     <div class="col-md-10">
 
                         <?php
-                            $query = "SELECT * FROM sobu ORDER BY id DESC";
+                            $query = "SELECT * FROM sobu WHERE category='Food'";
                             $result = mysqli_query($connection, $query);
                             if(!$result) {
                                 die("Query Error");
@@ -39,6 +41,8 @@
                         <?php } ?>
 
                     </div>
+
+                    
                     <div class="col-md-2">
                         <div class="panel panel-default">
                             <div class="panel-heading">Categories</div>
@@ -65,10 +69,12 @@
                             </div>
                         </div>
                     </div>
-
+                
                 </div>
             </div>
 
-
+           <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
+    </body>
 
 <?php include_once("../includes/templates/footer.php"); ?>

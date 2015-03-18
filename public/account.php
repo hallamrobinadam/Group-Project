@@ -8,11 +8,6 @@
 
 <?php include("../includes/templates/banner.php"); ?>
 
-<?php
-    if(isset($_SESSION["username"])) {
-        include("../includes/templates/post.php");
-    }
-?>
 
             <div class="container">
                 <div class="row">
