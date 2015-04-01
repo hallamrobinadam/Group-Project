@@ -6,9 +6,11 @@
 <?php include("../includes/templates/banner.php"); ?>
 
 
+
 <div class="register-box">
+    <legend>Register</legend>
     <form action="register.php" method="post">
-        <p>Username:</p> <input class="input-box" type="text" name="username" value="" placeholder="Username"><br>
+        <p>Username / Student ID:</p> <input class="input-box" type="text" name="username" value="" placeholder="Username / Student ID"><br>
         <p>Password:</p> <input class="input-box" type="password" name="password1" value="" placeholder="Password"><br>
         <p>Confirm Password:</p> <input class="input-box" type="password" name="password2" value="" placeholder="Confirm Password"><br>
         <input class="register-button" type="submit" name="register" value="Register">

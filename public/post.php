@@ -12,10 +12,9 @@
         
         $query = "SELECT * FROM `sobu` LIMIT 0, 30 ";
 
-	            $query = "INSERT INTO sobu (name_of_business, postcode, category, rating, description) VALUES ('{$name_of_business}', '{$postcode}', '{$category}', '{$rating}', '{$description}')";
+	            $query = "INSERT INTO sobu (name_of_business, user_id, username, postcode, category, rating, description) VALUES ('{$name_of_business}', '{$_SESSION["user_id"]}', '{$_SESSION["username"]}', '{$postcode}', '{$category}', '{$rating}', '{$description}')";
                 $result = mysqli_query($connection, $query);
                 if($result) {
-                   $_SESSION["message"] = "Success!";
                 } else {
                    $_SESSION["message"] = "Sorry something went wrong!";
                 }

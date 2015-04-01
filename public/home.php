@@ -14,9 +14,14 @@
     }
 ?>
 
+
             <div class="container">
+                
+                <legend>Student Deals - Live Feed</legend>
+                
                 <div class="row">
                     <div class="col-md-10">
+                        
 
                         <?php
                             $query = "SELECT * FROM sobu ORDER BY id DESC";
@@ -27,13 +32,14 @@
                             while($row = mysqli_fetch_assoc($result)) {
                         ?>
                              <div class="list-group">
-                                <a href="#" class="list-group-item active">
-                                    <p><?php echo ucfirst($row["name_of_business"]); ?></p>
+                                <a class="list-group-item active">
+                                    <p><h4>User : </h4><?php echo ucfirst($row["username"]); ?></p>
                                 </a>
-                                <div class="list-group-item"><p><?php echo ucfirst($row["category"]); ?></div>
-                                <div class="list-group-item"><p><?php echo ucfirst($row["postcode"]); ?></div>
-                                <div class="list-group-item"><p><?php echo ucfirst($row["rating"]); ?></div>
-                                <div class="list-group-item"><p><?php echo ucfirst($row["description"]); ?></div>
+                                <div class="list-group-item"><h4>Business:</h4><?php echo ucfirst($row["name_of_business"]); ?></div>
+                                <div class="list-group-item"><h4>Category:</h4><p><?php echo ucfirst($row["category"]); ?></div>
+                                <div class="list-group-item"><h4>Location:</h4><p><?php echo ucfirst($row["postcode"]); ?></div>
+                                <div class="list-group-item"><h4>Rating:</h4><p><?php echo ucfirst($row["rating"]); ?></div>
+                                <div class="list-group-item"><h4>Description:</h4><p><?php echo ucfirst($row["description"]); ?></div>
                             </div>
 
                         <?php } ?>

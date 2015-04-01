@@ -2,10 +2,7 @@
 <?php require_once("../includes/connect.php"); ?>
 <?php require_once("../includes/functions.php"); ?>
 <?php include_once("../includes/templates/header.php"); ?>
-
-
-<?php include("../includes/templates/nav.php"); ?>
-
+<?php include_once("../includes/templates/nav.php"); ?>
 <?php include("../includes/templates/banner.php"); ?>
             
         <div class="container">
@@ -62,10 +59,4 @@
                 </div>
             </div>
             
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    </body>
-
-
 <?php include_once("../includes/templates/footer.php"); ?>

@@ -12,12 +12,11 @@
         $result = mysqli_query($connection, $query);
 
         if($user = mysqli_fetch_assoc($result)) {
-            $_SESSION["message"] = "Success, welcome back {$user["username"]}";
             $_SESSION["username"] = $user["username"];
             $_SESSION["user_id"] = $user["id"];
 
         } else {
-            $_SESSION["message"] = "Wrong username/password";
+            $_SESSION["message"] = "Wrong Username/Password";
         }
 
     }

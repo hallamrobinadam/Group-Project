@@ -8,16 +8,21 @@
 
 <?php include("../includes/templates/banner.php"); ?>
 
-<?php
-    if(isset($_SESSION["username"])) {
-        include("../includes/templates/post.php");
-    }
-?>
+                        <div class = "container">
+                            
+                            <legend>Electronic Deals and Offers</legend>
+                            
+                                <div class="controls">
+                                    <p><a class="btn btn-primary btn-md" href="home.php" role="button">Post</a></p>
+                                </div>
+		                </div>
             
         
-                        <div class="container">
+            <div class="container">
+                <legend>Live Feed</legend>
                 <div class="row">
                     <div class="col-md-10">
+                        
 
                         <?php
                             $query = "SELECT * FROM sobu WHERE category='Electronics'";
@@ -28,13 +33,14 @@
                             while($row = mysqli_fetch_assoc($result)) {
                         ?>
                              <div class="list-group">
-                                <a href="#" class="list-group-item active">
-                                    <p><?php echo ucfirst($row["name_of_business"]); ?></p>
+                                <a class="list-group-item active">
+                                    <p><h4>User :</h4><?php echo ucfirst($row["username"]); ?></p>
                                 </a>
-                                <div class="list-group-item"><p><?php echo ucfirst($row["category"]); ?></div>
-                                <div class="list-group-item"><p><?php echo ucfirst($row["postcode"]); ?></div>
-                                <div class="list-group-item"><p><?php echo ucfirst($row["rating"]); ?></div>
-                                <div class="list-group-item"><p><?php echo ucfirst($row["description"]); ?></div>
+                                <div class="list-group-item"><h4>Business:</h4><?php echo ucfirst($row["name_of_business"]); ?></div>
+                                <div class="list-group-item"><h4>Category:</h4><p><?php echo ucfirst($row["category"]); ?></div>
+                                <div class="list-group-item"><h4>Locations:</h4><p><?php echo ucfirst($row["postcode"]); ?></div>
+                                <div class="list-group-item"><h4>Rating:</h4><p><?php echo ucfirst($row["rating"]); ?></div>
+                                <div class="list-group-item"><h4>Description:</h4><p><?php echo ucfirst($row["description"]); ?></div>
                             </div>
 
                         <?php } ?>
@@ -71,9 +77,7 @@
                 
                 </div>
             </div>
-
-           <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
+ 
     </body>
 
 <?php include_once("../includes/templates/footer.php"); ?>

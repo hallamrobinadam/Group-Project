@@ -19,12 +19,12 @@
 	            $query = "INSERT INTO users (username, password) VALUES ('{$username}', '{$password1}')";
                 $result = mysqli_query($connection, $query);
                 if($result) {
-                   $_SESSION["message"] = "Success!";
+                   $_SESSION["message"] = "You Have Successfully Registered!";
                 } else {
-                   $_SESSION["message"] = "Sorry something went wrong!";
+                   $_SESSION["message"] = "Sorry Something Went Wrong!";
                 }
             } else {
-                $_SESSION["message"] = "Passwords dont match";
+                $_SESSION["message"] = "Passwords Dont Match";
             }
 
         }

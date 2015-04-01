@@ -18,7 +18,7 @@ input {
     background: #56a3e5;
     border: 2px solid #56a3e5;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .post-box {
@@ -37,15 +37,11 @@ input {
 }
 
 
-.container1{
-    margin-right: 300px;
-    margin-left: 300px;
-    margin-top: 50px;
-    padding-top: 1px;
-    text-align: center;
-    border: solid;
-    background-color: #ebebeb;
-    border-color: #b2b2b2;
+.container1 {
+  padding-right: 210px;
+  padding-left: 210px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .form-control1 {
@@ -73,10 +69,9 @@ input {
   padding-top: 35px;
   margin: 0px 0 15px;
   border-bottom: 1px solid #eee;
-  background-color: #e250ba;
+  background-color: #f756cb;
   height: 150px;
-  margin-top: 50px;
-
+  margin-top: 40px;
 }
 
 
@@ -103,8 +98,8 @@ input {
 
 .text-box{
   border-radius: 10px;
-  width: 460px;
-  height: 120px;
+  width: 618px;
+  height: 65px;
 }
 
 .btn-primary{
@@ -119,13 +114,13 @@ input {
 
 .input-box{
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
 
 }
 
 .register-button{
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .dropdown-menu {
@@ -134,7 +129,7 @@ input {
   left: 0;
   z-index: 1000;
   display: none;
-  min-width: 160px;
+  width: auto;
   padding: 5px 0;
   margin: 2px 0 0;
   font-size: 14px;
@@ -152,8 +147,71 @@ input {
 
 .control-group1{
   display: inline-block;
+  padding-right: 15px;
+  margin-bottom: -10px;
+}
+
+.enum{
+  position: absolute;
+  display: inline-block;
+  margin-top: -63px;
+  margin-left: 18px;
+}
+
+.control-group3{
+  position: absolute;
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 18px;
+}
+
+.message {
+  text-align: center;
+  margin: 0px 0 15px;
+  background-color: #e250ba;
+  margin-top: 40px;
+  margin-bottom: -50px;
+  width: 100%px;
+}
+#dismiss {
+    cursor: pointer;
+}
+
+.btn-primary1 {
+  color: #fff;
+  background-color: #56a3e5;
+  border-color: #56a3e5;
+  margin-top: 5px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #56a3e5;
+  border-color: #56a3e5;
+  margin-bottom: 10px;
+}
+
+.container2{
+  width: 100%;
 }
 
 .control-group2{
-  display: inline-block;
+    margin-top: 10px;
+}
+
+.login-button{
+    background-color: #56a3e5;
+    border-color: #56a3e5;
+    border-radius: 5px;
+}
+
+.login-form{
+    border-color: #56a3e5;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.social-media{
+    width: 45px; 
+    height: 45px;
 }
