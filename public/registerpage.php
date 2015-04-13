@@ -6,7 +6,7 @@
 <?php include("../includes/templates/banner.php"); ?>
 
 
-
+<!-- The register form where users will register-->
 <div class="register-box">
     <legend>Register</legend>
     <form action="register.php" method="post">

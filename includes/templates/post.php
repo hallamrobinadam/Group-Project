@@ -7,7 +7,7 @@
                     <!-- Form Name -->
                     <legend>Post a Business</legend>
 
-                    <!-- Text input-->
+                    <!-- Name of business input-->
                     <div class="control-group1">
                       <label class="control-label" for="name_of_business">Name of Business</label>
                       <div class="controls">
@@ -16,7 +16,7 @@
                       </div>
                     </div>
 
-                    <!-- Text input-->
+                    <!-- Location input-->
                     <div class="control-group1">
                       <label class="control-label" for="postcode">Location</label>
                       <div class="controls">
@@ -27,13 +27,15 @@
                     
                     
                     
-                    <!-- Textarea -->
+                    <!-- Description input -->
                     <div class="control-group1">
                       <label class="control-label" for="description">Description</label>
                       <div class="controls">
                         <textarea id="description" name="description" placeholder="Type a description of the business here, do they offer student discounts." class="text-box"></textarea>
                       </div>
                     </div>
+                    
+                    <!-- Category dropdown -->
                     
                     <div class="enum">
                         <!-- Select Basic -->
@@ -51,7 +53,7 @@
                           </div>
                         </div>
 
-                        <!-- Select Basic -->
+                        <!-- Rating dropdown -->
                         <div class="control-group2">
                           <label class="control-label" for="rating">Rating</label>
                           <div class="controls">
@@ -66,7 +68,7 @@
                         </div>
                     </div>
 
-                        <!-- Button -->
+                        <!-- Post button -->
                     <div class="control-group3">
                       <label class="control-label" for="post"></label>
                       <div class="controls">

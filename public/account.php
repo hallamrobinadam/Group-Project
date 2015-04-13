@@ -12,11 +12,14 @@
                 
                 <legend>Your Posts</legend>
                 
+                <!-- Button to take user back to home page where they can post. The post form can be distracting when just browsing so it is hidden on this page. It will only be visable when logged in -->
+                
                 <div class="controls">
                     <p><a class="btn btn-primary btn-md" href="home.php" role="button">Post</a></p>
                 </div>
             </div>
 
+            <!-- Box which will display their own posts -->
 
             <div class="container">
                 <div class="row">
@@ -38,12 +41,14 @@
                                 <div class="list-group-item"><h4>Locations:</h4><p><?php echo ucfirst($row["postcode"]); ?></div>
                                 <div class="list-group-item"><h4>Rating:</h4><p><?php echo ucfirst($row["rating"]); ?></div>
                                 <div class="list-group-item"><h4>Description:</h4><p><?php echo ucfirst($row["description"]); ?></div>
-                                <a class="btn btn-primary1 btn-md" href="delete-post.php?id=<?php echo $row["id"]; ?>">Delete Post</a>
                             </div>
-
+                        <!-- Button to delete posts. -->
+                                <a class="btn btn-primary1 btn-md" href="delete-post.php?id=<?php echo $row["id"]; ?>">Delete Post</a>
                         <?php } ?>
 
                     </div>
+                
+                    <!-- Side bar where users can select their post the category -->
                     <div class="col-md-2">
                         <div class="panel panel-default">
                             <div class="panel-heading">Categories</div>
@@ -69,6 +74,26 @@
                                 <a href="other1.php">Other</a>
                             </div>
                         </div>
+                        <!-- Sidebar where users can see posts by just the rating -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Item Ratings</div>
+                            <div class="list-group-item">
+                                <a href="onestar1.php">One Star</a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="twostar1.php">Two Stars</a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="threestar1.php">Three Stars</a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="fourstar1.php">Four Stars</a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="fivestar1.php">Five Stars</a>
+                            </div>
+                        </div>
+                        
                     </div>
 
                 </div>

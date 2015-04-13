@@ -72,6 +72,7 @@ input {
   background-color: #f756cb;
   height: 150px;
   margin-top: 40px;
+  
 }
 
 
@@ -181,7 +182,8 @@ input {
   color: #fff;
   background-color: #56a3e5;
   border-color: #56a3e5;
-  margin-top: 5px;
+  margin-top: -5px;
+  margin-bottom: 5px;
 }
 
 .btn-primary {

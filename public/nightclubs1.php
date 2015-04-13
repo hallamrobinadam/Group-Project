@@ -1,3 +1,5 @@
+<!-- This page differs from the normal nightclubs.php as its functions is to show just the users posts of a certain caetgory. -->
+
 <?php require_once("../includes/session.php"); ?>
 <?php require_once("../includes/connect.php"); ?>
 <?php require_once("../includes/functions.php"); ?>
@@ -11,10 +13,13 @@
                         <div class = "container">
                             
                             <legend>Your Night Club Deals</legend>
-                            
+                            <!-- Button to take user back to home page where they can post. The post form can be distracting when just browsing so it is hidden on this page.It will only be visable when logged in -->
+                            <?php if(isset($_SESSION["username"])) { ?>
                                 <div class="controls">
                                     <p><a class="btn btn-primary btn-md" href="home.php" role="button">Post</a></p>
                                 </div>
+                            <?php } else { ?>
+                            <?php } ?>
 		                </div>
             
         
@@ -38,19 +43,19 @@
                                 <div class="list-group-item"><h4>Locations:</h4><p><?php echo ucfirst($row["postcode"]); ?></div>
                                 <div class="list-group-item"><h4>Rating:</h4><p><?php echo ucfirst($row["rating"]); ?></div>
                                 <div class="list-group-item"><h4>Description:</h4><p><?php echo ucfirst($row["description"]); ?></div>
-                                <a class="btn btn-primary1 btn-md" href="delete-post.php?id=<?php echo $row["id"]; ?>">Delete Post</a>
                             </div>
-
+                        <!-- Button to delete posts. -->
+                                <a class="btn btn-primary1 btn-md" href="delete-post.php?id=<?php echo $row["id"]; ?>">Delete Post</a>
                         <?php } ?>
 
                     </div>
 
-                    
+                    <!-- Sidebar where users can see posts by just the category -->
                     <div class="col-md-2">
                         <div class="panel panel-default">
                             <div class="panel-heading">Categories</div>
                             <div class="list-group-item">
-                                <a href="all.php">All</a>
+                                <a href="account.php">All</a>
                             </div>
                             <div class="list-group-item">
                                 <a href="food1.php">Food</a>
@@ -71,6 +76,29 @@
                                 <a href="other1.php">Other</a>
                             </div>
                         </div>
+                        <!-- Sidebar where users can see posts by just the rating. It will only be visable when logged in -->
+                        <?php if(isset($_SESSION["username"])) { ?>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Item Ratings</div>
+                            <div class="list-group-item">
+                                <a href="onestar1.php">One Star</a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="twostar1.php">Two Stars</a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="threestar1.php">Three Stars</a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="fourstar1.php">Four Stars</a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="fivestar1.php">Five Stars</a>
+                            </div>
+                            <?php } else { ?>
+                            <?php } ?>
+                        </div>
+                        
                     </div>
                 
                 </div>

@@ -12,11 +12,15 @@
 
 	                    <div class = "container">
                             
-                         <legend>All the Deals and Offers</legend>                           
+                         <legend>All the Deals and Offers</legend>
                             
+                            <!-- Button to take user back to home page where they can post. The post form can be distracting when just browsing so it is hidden on this page.It will only be visable when logged in -->
+                            <?php if(isset($_SESSION["username"])) { ?>
                                 <div class="controls">
                                     <p><a class="btn btn-primary btn-md" href="home.php" role="button">Post</a></p>
                                 </div>
+                            <?php } else { ?>
+                            <?php } ?>
 		                </div>  
             
         
@@ -25,7 +29,7 @@
                 <div class="row">
                     <div class="col-md-10">
                         
-
+                        <!-- Box which will display every posts -->
                         <?php
                             $query = "SELECT * FROM sobu ORDER BY id DESC";
                             $result = mysqli_query($connection, $query);
@@ -49,7 +53,7 @@
 
                     </div>
 
-                    
+                    <!-- Sidebar where users can see posts by just the category -->
                     <div class="col-md-2">
                         <div class="panel panel-default">
                             <div class="panel-heading">Categories</div>
@@ -75,6 +79,29 @@
                                 <a href="other.php">Other</a>
                             </div>
                         </div>
+                        <!-- Sidebar where users can see posts by just the rating. It will only be visable when logged in -->
+                        <?php if(isset($_SESSION["username"])) { ?>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Item Ratings</div>
+                            <div class="list-group-item">
+                                <a href="onestar.php">One Star</a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="twostar.php">Two Stars</a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="threestar.php">Three Stars</a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="fourstar.php">Four Stars</a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="fivestar.php">Five Stars</a>
+                            </div>
+                            <?php } else { ?>
+                            <?php } ?>
+                        </div>
+                        
                     </div>
                 
                 </div>

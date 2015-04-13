@@ -1,6 +1,8 @@
 <?php require_once("../includes/session.php"); ?>
 <?php include_once("../includes/templates/header.php"); ?>
 
+<!-- First thing users will see when entering site.Almost like a welcoming page, tells the user what the website is about-->
+
         <div class="jumbotron">
             <div class="container">
               <h1>Welcome to SOBU</h1>

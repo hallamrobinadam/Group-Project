@@ -1,4 +1,4 @@
-<!-- This page differs from the normal electronics.php as its functions is to show just the users posts of a certain caetgory. -->
+<!-- This page differs from the normal clothes.php as its functions is to show just the users posts of a certain rating. -->
 
 <?php require_once("../includes/session.php"); ?>
 <?php require_once("../includes/connect.php"); ?>
@@ -12,7 +12,7 @@
 
                         <div class = "container">
                             
-                            <legend>Your Electronic Deals</legend>
+                            <legend>Your Four Star Items</legend>
                             <!-- Button to take user back to home page where they can post. The post form can be distracting when just browsing so it is hidden on this page.It will only be visable when logged in -->
                             <?php if(isset($_SESSION["username"])) { ?>
                                 <div class="controls">
@@ -22,13 +22,13 @@
                             <?php } ?>
 		                </div>
             
-                        <!-- Box which will display just users electronic posts -->
+                        <!-- Box which will display just users clothes posts -->
                         <div class="container">
                 <div class="row">
                     <div class="col-md-10">
 
                         <?php
-                            $query = "SELECT * FROM sobu WHERE user_id ='$_SESSION[user_id]' AND category='Electronics'";
+                            $query = "SELECT * FROM sobu WHERE user_id ='$_SESSION[user_id]' AND rating='Four Stars'";
                             $result = mysqli_query($connection, $query);
                             if(!$result) {
                                 die("Query Error");
@@ -76,7 +76,7 @@
                                 <a href="other1.php">Other</a>
                             </div>
                         </div>
-                        <!-- Sidebar where users can see posts by just the rating. It will only be visable when logged in -->
+                        <!-- Sidebar where users can see posts by just the rating -->
                         <?php if(isset($_SESSION["username"])) { ?>
                         <div class="panel panel-default">
                             <div class="panel-heading">Item Ratings</div>

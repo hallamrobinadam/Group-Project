@@ -4,12 +4,7 @@
     require_once("../includes/functions.php");
 
     if(isset($_GET["id"])) {
-        $post_id = $_GET["id"];
-
-        
-        //select query
-        //test that the posts user_id  matches the session user id
-        
+        $post_id = $_GET["id"];        
         
         $sql = "DELETE FROM sobu WHERE id = '{$post_id}'";
 

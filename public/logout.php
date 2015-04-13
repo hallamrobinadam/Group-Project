@@ -4,7 +4,7 @@
 
 
     session_destroy();
-    redirectTo("home.php");
+    redirectTo("home.php"); /* Once a user has logged out then they will be redirected back to the home page */
 
 
 

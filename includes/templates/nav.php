@@ -1,4 +1,5 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
+    
     <div class="container">
 
     <a href="home.php" class="navbar-brand">SOBU</a>
@@ -6,6 +7,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a class="home" href="home.php">Home</a></li>
 
+                <!-- Social Media drop down  -->
                 <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b></a>
                         <ul class="dropdown-menu" role="menu">
@@ -15,6 +17,8 @@
                             <li><a href="https://instagram.com"><img src="images/Instagram.png" class="social-media"/></a></li>
                         </ul>
                 </li>
+                
+                <!-- About page, Account page, Logout and register buttons. Logout and Account button will only appear when logged in. -->
 
                 <li><a href="about.php">About</a></li>
                 <?php if(isset($_SESSION["username"])) { ?>
@@ -23,6 +27,8 @@
                 <?php } else { ?>
                 	<li><a href="registerpage.php">Register</a></li>
                 	<li class="dropdown">
+                        
+                        <!-- Login button,dropdown and form. Wont show when a user is loggen in. -->
 
 	                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Login <b class="caret"></b></a>
 	                    <ul class="dropdown-menu" role="menu">

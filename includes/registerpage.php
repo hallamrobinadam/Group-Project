@@ -9,14 +9,16 @@
     <link rel="stylsheet" href="css/styles.css">
 </head>
 
-<div class="register-box">
-    <form action="register.php" method="post">
-        <p>Username:</p> <input type="text" name="username" value=""><br>
-        <p>Password:</p> <input type="password" name="password1" value=""><br>
-        <p>Confirm Password:</p> <input type="password" name="password2" value=""><br>
-        <input type="submit" name="register" value="register">
-    </form>
-</div>
+
+<!-- Register form -->
+    <div class="register-box">
+        <form action="register.php" method="post">
+            <p>Username:</p> <input type="text" name="username" value=""><br>
+            <p>Password:</p> <input type="password" name="password1" value=""><br>
+            <p>Confirm Password:</p> <input type="password" name="password2" value=""><br>
+            <input type="submit" name="register" value="register">
+        </form>
+    </div>
 
 <?php if(!isset($_SESSION["username"])) { ?>
 

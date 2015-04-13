@@ -16,7 +16,7 @@
             $_SESSION["user_id"] = $user["id"];
 
         } else {
-            $_SESSION["message"] = "Wrong Username/Password";
+            $_SESSION["message"] = "Wrong Username/Password"; /* If the password does nots match with the one they registered with then this message will appear */
         }
 
     }
