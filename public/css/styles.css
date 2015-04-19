@@ -1,3 +1,7 @@
+.body{
+    background-color: rgba(240, 240, 240, 0.9);
+}
+
 .login-box {
     padding-left: 10px;
     padding-right: 10px;
@@ -15,8 +19,7 @@ input {
     width: 300px;
     margin:20px auto;
     text-align: center;
-    background: #56a3e5;
-    border: 2px solid #56a3e5;
+    background-color: rgba(240, 240, 240, 0.9);
     padding: 20px;
     border-radius: 5px;
 }
@@ -66,7 +69,8 @@ input {
 
 
 .page-header1 {
-  padding-top: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin: 0px 0 15px;
   border-bottom: 1px solid #eee;
   background-color: #f756cb;
@@ -104,8 +108,7 @@ input {
 }
 
 .btn-primary{
-  background-color: #56a3e5;
-  border-color: #56a3e5;
+  background-color: rgba(86, 163, 229, 0.66);
 }
 
 .form-horizontal{
@@ -179,17 +182,15 @@ input {
 }
 
 .btn-primary1 {
-  color: #fff;
-  background-color: #56a3e5;
-  border-color: #56a3e5;
+  color: black;
+  background-color: rgba(86, 163, 229, 0.66);
   margin-top: -5px;
   margin-bottom: 5px;
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #56a3e5;
-  border-color: #56a3e5;
+  color: black;
+  background-color: rgba(86, 163, 229, 0.66);
   margin-bottom: 10px;
 }
 
@@ -216,4 +217,26 @@ input {
 .social-media{
     width: 45px; 
     height: 45px;
+}
+
+.list-group-horizontal .list-group-item {
+    display: inline-block;
+}
+.list-group-horizontal .list-group-item {
+	margin-bottom: 0;
+	margin-left:-4px;
+	margin-right: 0;
+}
+.list-group-horizontal .list-group-item:first-child {
+	border-top-right-radius:0;
+	border-bottom-left-radius:4px;
+}
+.list-group-horizontal .list-group-item:last-child {
+	border-top-right-radius:4px;
+	border-bottom-left-radius:0;
+}
+
+.p1 {
+  margin: 0 0 10px;
+  text-align: justify;
 }

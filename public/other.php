@@ -36,15 +36,18 @@
                             }
                             while($row = mysqli_fetch_assoc($result)) {
                         ?>
-                             <div class="list-group">
-                                <a href="#" class="list-group-item active">
-                                    <p><h4>User :</h4><?php echo ucfirst($row["username"]); ?></p>
+                             <div class="media">
+                              <div class="media-left media-top">
+                                <a href="">
+                                  <img class="media-object" src="images/default-avatar.png" alt="...">
                                 </a>
-                                <div class="list-group-item"><h4>Business:</h4><?php echo ucfirst($row["name_of_business"]); ?></div>
-                                <div class="list-group-item"><h4>Category:</h4><p><?php echo ucfirst($row["category"]); ?></div>
-                                <div class="list-group-item"><h4>Locations:</h4><p><?php echo ucfirst($row["postcode"]); ?></div>
-                                <div class="list-group-item"><h4>Rating:</h4><p><?php echo ucfirst($row["rating"]); ?></div>
-                                <div class="list-group-item"><h4>Description:</h4><p><?php echo ucfirst($row["description"]); ?></div>
+                              </div>
+                              <div class="media-body">
+                                <h4 class="media-heading"><?php echo ucfirst($row["username"]); ?></h4>
+                                <h4 class="media-heading"><h4></h4><p><?php echo ucfirst($row["description"]); ?></h4>
+                                <h5 class="media-heading"><h5>Rating:</h5><?php echo ucfirst($row["rating"]); ?></h5>
+                                <h5 class="media-heading"><h5>Locations:</h5><p><?php echo ucfirst($row["postcode"]); ?></h5>
+                              </div>
                             </div>
 
                         <?php } ?>

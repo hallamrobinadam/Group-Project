@@ -3,6 +3,8 @@
     <div class="container">
 
     <a href="home.php" class="navbar-brand">SOBU</a>
+        
+        
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a class="home" href="home.php">Home</a></li>
@@ -22,7 +24,7 @@
 
                 <li><a href="about.php">About</a></li>
                 <?php if(isset($_SESSION["username"])) { ?>
-                    <li><a href="account.php" >My Posts</a></li>
+                    <li><a href="account.php" > My Posts</a></li>
                 	<li><a href="logout.php">Logout</a></li>
                 <?php } else { ?>
                 	<li><a href="registerpage.php">Register</a></li>
